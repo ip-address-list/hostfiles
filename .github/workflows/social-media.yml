@@ -1,0 +1,80 @@
+name: Update Social Media
+
+on:
+  schedule:
+    - cron:  '0 0 * * 0'
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate lists
+        shell: pwsh
+        run: |
+          $source = "https://raw.githubusercontent.com/Sinfonietta/hostfiles/refs/heads/master/social-hosts"
+          $inputFile = "$($Env:GITHUB_WORKSPACE)/social-hosts.txt"
+          $outputFolder = "$($Env:GITHUB_WORKSPACE)/social-media"
+
+          Write-Output $inputFile
+          Write-Output $outputFolder
+
+          Invoke-WebRequest -Uri $source -OutFile $inputFile
+
+          if (!(Test-Path $outputFolder))
+          {
+              New-Item -ItemType Directory -Path $outputFolder | Out-Null
+          }
+
+          $lines = Get-Content -Path $inputFile
+
+          $currentGroupName = $null
+          $currentGroupContent = @()
+
+          foreach ($line in $lines)
+          {
+              if ($line -match "^# ([A-Za-z\s]+)$")
+              {
+                  $currentGroupName = $matches[1]
+                  $currentGroupContent = @()
+
+                  Write-Output "Generating host files for '$currentGroupName'."
+              }
+              elseif ($line -match "^[^#]")
+              {
+                  $currentGroupContent += $line
+              }
+              elseif ([string]::IsNullOrWhiteSpace($line))
+              {
+                  if ($currentGroupName -ne $null -and $currentGroupContent.Count -gt 0)
+                  {
+                      $groupFilePath = Join-Path $outputFolder "$($currentGroupName.ToLower().Replace(" ", "-")).txt"
+                      $timestamp = "# Generated on $(Get-Date -Format 'yyyy-MM-dd')"
+                      @("# $currentGroupName", "# Generated from $source", $timestamp, "") + $currentGroupContent | Set-Content -Path $groupFilePath
+                  }
+          
+                  # Reset group variables
+                  $currentGroupName = $null
+                  $currentGroupContent = @()
+              }
+          }
+          
+          if ($currentGroupName -ne $null -and $currentGroupContent.Count -gt 0)
+          {
+              $groupFilePath = Join-Path $outputFolder "$($currentGroupName.ToLower().Replace(" ", "-")).txt"
+              $timestamp = "# Generated on $(Get-Date -Format 'yyyy-MM-dd')"
+              @("# $currentGroupName", "# Generated from $source", $timestamp, "") + $currentGroupContent | Set-Content -Path $groupFilePath
+          }
+
+          Remove-Item $inputFile
+
+      - name: Commit and push changes
+        uses: actions-js/push@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
+          message: "Automatically updated host files using GitHub Actions."
