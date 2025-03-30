@@ -1,6 +1,6 @@
 # clubhouse
 # Generated from https://raw.githubusercontent.com/Sinfonietta/hostfiles/refs/heads/master/social-hosts
-# Generated on 2025-03-23
+# Generated on 2025-03-30
 
 127.0.0.1 joinclubhouse.com
 127.0.0.1 www.joinclubhouse.com
