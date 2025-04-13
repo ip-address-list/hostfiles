@@ -1,6 +1,6 @@
 # LinkedIn
 # Generated from https://raw.githubusercontent.com/Sinfonietta/hostfiles/refs/heads/master/social-hosts
-# Generated on 2025-04-06
+# Generated on 2025-04-13
 
 127.0.0.1 addtoprofile.linkedin.com
 127.0.0.1 ads.linkedin.com
