@@ -1,6 +1,6 @@
 # Other
 # Generated from https://raw.githubusercontent.com/Sinfonietta/hostfiles/refs/heads/master/social-hosts
-# Generated on 2025-05-18
+# Generated on 2025-05-25
 
 127.0.0.1 pinpages.alwaysdata.net
 127.0.0.1 allotalk.com
