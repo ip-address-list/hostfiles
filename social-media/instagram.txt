@@ -1,6 +1,6 @@
 # Instagram
 # Generated from https://raw.githubusercontent.com/Sinfonietta/hostfiles/refs/heads/master/social-hosts
-# Generated on 2025-05-25
+# Generated on 2025-06-01
 
 127.0.0.1 a.ns.cdninstagram.com
 127.0.0.1 api.instagram.com
@@ -412,3 +412,4 @@
 127.0.0.1 z-p42-scontent-yyz1-1.cdninstagram.com
 127.0.0.1 z-p42-scontent.cdninstagram.com
 127.0.0.1 z-p42-static.cdninstagram.com
+127.0.0.1 scontent.fallback.cdninstagram.com
