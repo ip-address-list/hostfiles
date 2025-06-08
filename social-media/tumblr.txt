@@ -1,6 +1,6 @@
 # Tumblr
 # Generated from https://raw.githubusercontent.com/Sinfonietta/hostfiles/refs/heads/master/social-hosts
-# Generated on 2025-06-01
+# Generated on 2025-06-08
 
 127.0.0.1 24.media.tumblr.com
 127.0.0.1 25.media.tumblr.com
