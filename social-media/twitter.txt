@@ -1,6 +1,6 @@
 # Twitter
 # Generated from https://raw.githubusercontent.com/Sinfonietta/hostfiles/refs/heads/master/social-hosts
-# Generated on 2025-06-08
+# Generated on 2025-06-15
 
 127.0.0.1 0.twitter.com
 127.0.0.1 2010.twitter.com
