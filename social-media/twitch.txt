@@ -1,6 +1,6 @@
 # Twitch
 # Generated from https://raw.githubusercontent.com/Sinfonietta/hostfiles/refs/heads/master/social-hosts
-# Generated on 2025-06-22
+# Generated on 2025-06-29
 
 127.0.0.1 twitch.tv
 127.0.0.1 www.twitch.tv
