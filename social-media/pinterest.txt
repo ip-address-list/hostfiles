@@ -1,6 +1,6 @@
 # Pinterest
 # Generated from https://raw.githubusercontent.com/Sinfonietta/hostfiles/refs/heads/master/social-hosts
-# Generated on 2025-07-20
+# Generated on 2025-07-27
 
 127.0.0.1 about.pinterest.com
 127.0.0.1 accounts.pinterest.com
