@@ -1,6 +1,6 @@
 # Facebook
 # Generated from https://raw.githubusercontent.com/Sinfonietta/hostfiles/refs/heads/master/social-hosts
-# Generated on 2025-07-27
+# Generated on 2025-08-03
 
 127.0.0.1 0-act.channel.facebook.com
 127.0.0.1 0-edge-chat.facebook.com
