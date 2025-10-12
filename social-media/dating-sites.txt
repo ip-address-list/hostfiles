@@ -1,6 +1,6 @@
 # Dating sites
 # Generated from https://raw.githubusercontent.com/Sinfonietta/hostfiles/refs/heads/master/social-hosts
-# Generated on 2025-10-05
+# Generated on 2025-10-12
 
 127.0.0.1 tinder.com
 127.0.0.1 bumble.com
