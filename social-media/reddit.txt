@@ -1,6 +1,6 @@
 # Reddit
 # Generated from https://raw.githubusercontent.com/Sinfonietta/hostfiles/refs/heads/master/social-hosts
-# Generated on 2025-10-12
+# Generated on 2025-10-19
 
 127.0.0.1 a.thumbs.redditmedia.com
 127.0.0.1 about.reddit.com
