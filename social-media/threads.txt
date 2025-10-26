@@ -1,6 +1,6 @@
 # Threads
 # Generated from https://raw.githubusercontent.com/Sinfonietta/hostfiles/refs/heads/master/social-hosts
-# Generated on 2025-10-19
+# Generated on 2025-10-26
 
 127.0.0.1 threads.net
 127.0.0.1 www.threads.net
