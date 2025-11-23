@@ -1,6 +1,6 @@
 # TikTok
 # Generated from https://raw.githubusercontent.com/Sinfonietta/hostfiles/refs/heads/master/social-hosts
-# Generated on 2025-11-16
+# Generated on 2025-11-23
 
 127.0.0.1 abtest-sg-tiktok.byteoversea.com
 127.0.0.1 abtest-va-tiktok.byteoversea.com
