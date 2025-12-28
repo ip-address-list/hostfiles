@@ -1,5 +1,5 @@
 # TikTok clone
 # Generated from https://raw.githubusercontent.com/Sinfonietta/hostfiles/refs/heads/master/social-hosts
-# Generated on 2025-12-21
+# Generated on 2025-12-28
 
 127.0.0.1 likee.video
