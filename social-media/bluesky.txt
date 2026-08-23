@@ -1,6 +1,6 @@
 # Bluesky
 # Generated from https://raw.githubusercontent.com/Sinfonietta/hostfiles/refs/heads/master/social-hosts
-# Generated on 2026-08-16
+# Generated on 2026-08-23
 
 127.0.0.1 bsky.app
 127.0.0.1 bsky.social
